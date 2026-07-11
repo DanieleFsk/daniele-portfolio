@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio di Daniele: sviluppo web, simulazioni e automazione industriale." />
+  <title>Daniele — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav wrap">
+    <a class="brand" href="#top" aria-label="Torna all'inizio"><span>DP</span> Daniele</a>
+    <nav aria-label="Navigazione principale">
+      <a href="#profilo">Profilo</a><a href="#competenze">Competenze</a><a href="#progetti">Progetti</a>
+    </nav>
+    <a class="button small" href="https://github.com/DanieleFsk">GitHub ↗</a>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div>
+        <p class="eyebrow"><span class="live"></span> Disponibile a crescere su progetti concreti</p>
+        <h1>Costruisco esperienze digitali con <em>logica, curiosità</em> e attenzione al dettaglio.</h1>
+        <p class="lead">Sviluppatore in crescita orientato a interfacce web, dati e automazione. Trasformo idee complesse in prototipi chiari, verificabili e facili da usare.</p>
+        <div class="actions"><a class="button" href="#progetti">Esplora i progetti ↓</a><a class="text-link" href="#profilo">Conosci il mio approccio</a></div>
+      </div>
+      <aside class="status-card" aria-label="Profilo sintetico">
+        <div class="code-head"><i></i><i></i><i></i><span>profile.json</span></div>
+        <pre><span class="muted">{</span>
+  <b>"focus"</b>: <span>"Web & Automation"</span>,
+  <b>"approach"</b>: <span>"Learn by building"</span>,
+  <b>"strengths"</b>: [
+    <span>"problem solving"</span>,
+    <span>"precision"</span>,
+    <span>"continuous learning"</span>
+  ],
+  <b>"status"</b>: <span>"growing"</span>
+<span class="muted">}</span></pre>
+        <div class="metric-row"><div><strong>3</strong><span>Demo interattive</span></div><div><strong>∞</strong><span>Curiosità</span></div></div>
+      </aside>
+    </section>
+
+    <section class="section wrap" id="profilo">
+      <div class="section-title"><p class="eyebrow">01 / Profilo</p><h2>Una base tecnica, una mentalità pratica.</h2></div>
+      <div class="profile-grid">
+        <p class="big-copy">Mi chiamo <strong>Daniele</strong>. Sto costruendo un percorso nello sviluppo software attraverso progetti che uniscono interfacce, logica applicativa e sistemi automatizzati. Preferisco capire davvero un problema, dividerlo in parti e trasformarlo in qualcosa che funziona.</p>
+        <div class="principles">
+          <article><span>01</span><div><h3>Imparare facendo</h3><p>Uso prototipi e feedback rapidi per consolidare competenze reali.</p></div></article>
+          <article><span>02</span><div><h3>Chiarezza prima di tutto</h3><p>Interfacce leggibili, flussi comprensibili e codice organizzato.</p></div></article>
+          <article><span>03</span><div><h3>Affidabilità progressiva</h3><p>Testo le ipotesi, riconosco i limiti e miglioro per iterazioni.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="competenze"><div class="wrap">
+      <div class="section-title"><p class="eyebrow">02 / Competenze</p><h2>Una fotografia onesta, non un voto definitivo.</h2><p>I livelli descrivono l'autonomia attuale su progetti personali: cambiano con studio, pratica e confronto.</p></div>
+      <div class="skills-layout">
+        <div class="skill-list" id="skillList"></div>
+        <div class="radar-card"><canvas id="radar" width="520" height="420" aria-label="Grafico radar delle competenze"></canvas></div>
+      </div>
+      <div class="growth"><div class="growth-head"><h3>Percorso di crescita</h3><span>Direzione, non decorazione</span></div><div class="timeline">
+        <article class="done"><b>Fondamenta</b><span>HTML, CSS, JavaScript e logica</span></article>
+        <article class="active"><b>Applicazioni</b><span>Dati, componenti e simulazioni</span></article>
+        <article><b>Integrazione</b><span>API, database e testing</span></article>
+        <article><b>Produzione</b><span>Architetture robuste e CI/CD</span></article>
+      </div></div>
+    </div></section>
+
+    <section class="section wrap" id="progetti">
+      <div class="section-title"><p class="eyebrow">03 / Laboratorio</p><h2>Tre idee, trasformate in esperienze interattive.</h2><p>Prototipi dimostrativi eseguiti interamente nel browser.</p></div>
+
+      <article class="project">
+        <div class="project-copy"><span class="project-no">01</span><p class="tag">JavaScript · Canvas · Game loop</p><h3>Skyfall Survivor</h3><p>Un survival platform ispirato ai classici: muoviti, salta e spara verso l'alto per distruggere i droni prima dell'impatto.</p><ul><li>Movimento con A/D o frecce</li><li>Sparo con spazio, salto con W</li><li>Difficoltà progressiva</li></ul></div>
+        <div class="demo game-shell"><div class="demo-bar"><span>DEMO / SURVIVAL</span><div><b id="score">0000</b><button id="startGame">Avvia</button></div></div><canvas id="game" width="760" height="420" tabindex="0" aria-label="Videogioco Skyfall Survivor"></canvas><p class="mobile-controls"><button data-key="ArrowLeft">←</button><button data-key="KeyW">↑</button><button data-key="Space">●</button><button data-key="ArrowRight">→</button></p></div>
+      </article>
+
+      <article class="project reverse">
+        <div class="project-copy"><span class="project-no">02</span><p class="tag">Data UI · Ricerca · Risk logic</p><h3>BankOps Console</h3><p>Dashboard operatore per consultare un database dimostrativo di clienti, saldi, investimenti, mutui e profilo di rischio.</p><ul><li>Ricerca e filtri immediati</li><li>Indicatori patrimoniali</li><li>Segnalazione esposizioni critiche</li></ul></div>
+        <div class="demo bank"><div class="demo-bar"><span>DEMO / CUSTOMER INTELLIGENCE</span><i class="secure">● SECURE</i></div><form id="bankForm"><label>Ricerca cliente<input id="bankSearch" placeholder="Nome, città o ID..." /></label><label>Rischio<select id="riskFilter"><option value="all">Tutti</option><option>Basso</option><option>Medio</option><option>Alto</option></select></label><button>Cerca</button></form><div class="bank-kpis" id="bankKpis"></div><div class="table-wrap"><table><thead><tr><th>Cliente</th><th>Saldo</th><th>Investimenti</th><th>Mutuo</th><th>Rischio</th></tr></thead><tbody id="bankRows"></tbody></table></div><p class="disclaimer">Dati sintetici, creati esclusivamente per la demo.</p></div>
+      </article>
+
+      <article class="project">
+        <div class="project-copy"><span class="project-no">03</span><p class="tag">Industrial UI · State machine · I/O</p><h3>CellFlow 3X</h3><p>Digital twin semplificato di una cella FANUC: tre nastri alimentano il robot, che pallettizza scatole di caffè e coordina un muletto AMR.</p><ul><li>Sequenza vincolata dai segnali I/O</li><li>Arresto sicuro sulle periferiche</li><li>Ciclo pallet e prelievo AMR</li></ul></div>
+        <div class="demo factory"><div class="demo-bar"><span>DEMO / ROBOT CELL</span><div><i id="cellLight"></i><b id="cellState">STOPPED</b></div></div><div class="factory-scene" id="factoryScene"><div class="belt b1"><span>CAFFÈ</span></div><div class="belt b2"><span>CAFFÈ</span></div><div class="belt b3"><span>CAFFÈ</span></div><div class="robot"><i></i><b></b><em></em></div><div class="pallet" id="pallet"></div><div class="forklift" id="forklift">AMR</div></div><div class="io-panel"><button id="toggleCell">Avvia ciclo</button><label><input type="checkbox" id="ioGuard" checked> Riparo chiuso</label><label><input type="checkbox" id="ioBelts" checked> Nastri pronti</label><label><input type="checkbox" id="ioPallet" checked> Pallet presente</label><span id="boxCount">Pallet 0 / 6</span></div><div class="io-log" id="ioLog">[SYSTEM] Cella pronta. In attesa di START.</div></div>
+      </article>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><div><p class="eyebrow">Costruiamo qualcosa di utile.</p><h2>Curioso oggi.<br>Più competente domani.</h2></div><div><a href="https://github.com/DanieleFsk">github.com/DanieleFsk ↗</a><p>© <span id="year"></span> Daniele</p></div></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
