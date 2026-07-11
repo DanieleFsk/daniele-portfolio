@@ -1,10 +1,12 @@
 # Daniele — Developer Portfolio
 
-Portfolio personale statico, responsive e accessibile, con tre demo interattive:
+Portfolio personale statico, responsive e accessibile, orientato a ruoli di coordinamento tecnico e delivery, con tre esperienze interattive:
 
 - **Skyfall Survivor** — mini-game Canvas survival con droni e difficoltà progressiva.
-- **BankOps Console** — dashboard bancaria con dati sintetici, ricerca, indicatori e rischio.
-- **CellFlow 3X** — simulatore di cella robotica con tre nastri, pallettizzazione, AMR e logica I/O.
+- **BankOps Console** — dashboard bancaria con 500 profili sintetici, filtri avanzati, dettaglio patrimoniale e operazioni CRUD persistenti sul dispositivo.
+- **CellFlow 3X** — simulatore di cella robotica con tre nastri, pallettizzazione, AMR, interblocchi, modalità operative e diagnostica I/O.
+
+Le classifiche e le modifiche della demo sono persistenti nel browser tramite Web Storage. Non vengono presentate come database condiviso: per una persistenza multiutente servirebbe un backend autenticato separato da GitHub Pages.
 
 ## Avvio locale
 
